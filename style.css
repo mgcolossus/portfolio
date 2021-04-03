@@ -53,14 +53,6 @@
   }
 }
 
-.about {
-  margin: 15px 0px 0px 0px;
-  font-size: 24px;
-}
-.about span {
-  font-weight: 700;
-}
-
 .aim {
   margin: 10px 0px 0px 0px;
   font-size: 24px;
@@ -69,52 +61,72 @@
   font-weight: 700;
 }
 
-.examples {
-  margin: 40px 0px 0px 0px;
+.projects {
+  margin: 20px 0 0 0;
 }
-.examples .title {
-  font-size: 36px;
+.projects__body {
+  display: flex;
+  flex-direction: column;
 }
-.examples__body {
+
+.project-item {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -10px;
-}
-.examples__item {
-  position: relative;
-  display: flex;
-  flex: 0 0 100%;
+  transition: 0.5s all;
   border: 1px solid black;
   border-radius: 7px;
-  padding: 10px 0;
-  margin: 10px;
-  transition: 0.5s all;
-  color: black;
-  text-decoration: none;
+  margin: 10px 0;
 }
-.examples__item:hover {
-  background-color: rgba(119, 190, 238, 0.63);
-}
-.examples__item-wrapper {
+.project-item-icon {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: 0 10px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
 }
-.examples__item-icon {
-  flex: 0 0 40px;
-  width: 40px;
-  height: 40px;
-  margin: 0px 10px 0px 0px;
-}
-.examples__item-icon img {
+.project-item-icon img {
   width: 100%;
   height: 100%;
 }
-.examples__item-title {
+.project-item__deploy-link {
+  flex: 1 1 calc(100% - 50px);
+  padding: 10px 0;
+  color: black;
+  text-decoration: none;
+  transition: 0.5s all;
+}
+.project-item__deploy-link:hover {
+  background-color: rgba(119, 190, 238, 0.63);
+}
+.project-item__source-link {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all;
+}
+.project-item__source-link:hover {
+  background-color: rgba(119, 190, 238, 0.63);
+}
+@media (max-width: 768px) {
+  .project-item__source-link {
+    flex: 1 1 100%;
+  }
+}
+.project-item__deploy-link-body {
+  display: flex;
+  align-items: center;
+}
+.project-item__content {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+}
+.project-item__title {
   font-size: 26px;
 }
-.examples__item-descr {
+.project-item__descr {
   margin: 5px 0px 0px 0px;
   font-size: 16px;
   font-weight: 300;
