@@ -68,6 +68,9 @@
   display: flex;
   flex-direction: column;
 }
+.projects__title_with-space {
+  margin: 15px 0px 0px 0px;
+}
 
 .project-item {
   display: flex;
@@ -123,6 +126,9 @@
   flex: 1 1 100%;
   flex-direction: column;
 }
+.project-item__content_no-icon {
+  padding: 0px 0px 0px 20px;
+}
 .project-item__title {
   font-size: 26px;
 }
@@ -130,4 +136,7 @@
   margin: 5px 0px 0px 0px;
   font-size: 16px;
   font-weight: 300;
+}
+.project-item__features-list {
+  padding: 0px 0px 0px 20px;
 }
